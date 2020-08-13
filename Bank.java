@@ -46,17 +46,4 @@ public String toString(){
   return ("this is hard");
 }
 
-//generate a random 5 digit number which will act as the account number 
-public int createAccNum(){ //need to return an int
-  Random userName = new Random(); // same as scanner
-  int number;      // introduce variable
-  int user[] = new int[5]; //create array to store num
-
-  for(int i=0; i<5; i++){ //generate 5 random numbers
-    number = userName.nextInt(9); //nums between 0 & 9
-    user[i] = number; //add number to array in order
-    return user[1]; //return 5 digit array
-
-  }
-}
 }

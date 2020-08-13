@@ -18,7 +18,17 @@ class Main {
   System.out.println("Welcome. What would you like to do today? Deposit, Withdraw or Check Balance");
   }
   else{
-  createAccount();
+  Scanner input3 = new Scanner(System.in);
+  System.out.println("Please enter your first name: ");
+  String firstName1 = input3.nextLine();
+  
+  Scanner input4 = new Scanner(System.in);
+  System.out.println("Please enter your last name: ");
+  String surName1 = input4.nextLine();
+
+  Person newAcc = new Person(firstName1, surName1);
+  newAcc.createAccount();
+
   }
   
 }
